@@ -24,6 +24,7 @@ For now google drive:
 
 https://drive.google.com/open?id=1lm0Reobp36_OcAq6geeWgNYy9rXo9BVA
 
+
 ### Source files
 There is an excel sheet:*NGS project explanation for Ludo.xls* saying which species is which sample. a Careful some sample in the source data are for other projects.
   
@@ -35,4 +36,3 @@ of  the Mitochondria done in another lab for Micrelencus tesselatus (=Cantharidu
 
 
 
-https://drive.google.com/open?id=1lm0Reobp36_OcAq6geeWgNYy9rXo9BVA
