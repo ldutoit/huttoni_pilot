@@ -26,7 +26,7 @@ https://drive.google.com/open?id=1lm0Reobp36_OcAq6geeWgNYy9rXo9BVA
 
 
 ### Source files
-There is an excel sheet:*NGS project explanation for Ludo.xls* saying which species is which sample.Careful some samplse in the source data are for other projects.
+There is an excel sheet:*NGS project explanation for Ludo.xls* saying which species is which sample. Careful, some samples in the source data are for other projects.
   
 The data  includes assembly done upstream with *Edena* as well as the raw reads in *NZGL02420P2* and a reference assembly 
 of  the Mitochondria done in another lab for Micrelencus tesselatus (=Cantharidus.tesselatus.fasta).
