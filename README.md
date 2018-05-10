@@ -32,7 +32,12 @@ The data  includes assembly done upstream with *Edena* as well as the raw reads 
 of  the Mitochondria done in another lab for Micrelencus tesselatus (=Cantharidus.tesselatus.fasta).
   
 
+## Analyses
 
+1. cleaning
+2. MITOBIM mitochondrial assembliesfor the four species from a COI
+3. remapping to the best of the MITOBIM results and checking coverage of mapping
+4. alignment with muscle, check for both 2 and 3 extract the best results
 
 
 
