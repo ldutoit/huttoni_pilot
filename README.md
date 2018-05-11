@@ -34,10 +34,14 @@ of  the Mitochondria done in another lab for Micrelencus tesselatus (=Cantharidu
 
 ## Analyses
 
-1. cleaning
-2. MITOBIM mitochondrial assembliesfor the four species from a COI
-3. remapping to the best of the MITOBIM results and checking coverage of mapping
-4. alignment with muscle, check for both 2 and 3 extract the best results
+### 1. cleaning
+
+The cleaning is done with *trimming_PE.sh* using the bbmap suite.
+
+
+### 2. MITOBIM mitochondrial assembliesfor the four species from a COI
+### 3. remapping to the best of the MITOBIM results and checking coverage of mapping
+### 4. alignment with muscle, check for both 2 and 3 extract the best results
 
 
 
