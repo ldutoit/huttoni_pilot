@@ -1,4 +1,4 @@
-# Micrelenchus
+d# Micrelenchus
 
 ## Description
 
@@ -40,6 +40,18 @@ The cleaning is done with *trimming_PE.sh* using the bbmap suite.
 
 
 ### 2. MITOBIM mitochondrial assembliesfor the four species from a COI
+
+We first identified bait sequences from NCBI to be able to run MITOBIM on it, a software creating an assembly by iterative mapping to a reference that updates itself. We were able to retrieve partial or complete sequences for COI, 12S rRNA and 16S rRNA for the four species ( see ref in listofseqforbaiting.md).
+
+Then we ran mitobim on each of them using similar but independent procedures, described in the files:
+
+Micrelenchus_tesselatus_mitobim.md
+Micrelenchus_tenebrosus_mitobim.md
+Micrelenchus_huttonii_mitobim.md
+Roseaplagis_rufozona_mitobim.md
+
+
+
 ### 3. remapping to the best of the MITOBIM results and checking coverage of mapping
 ### 4. alignment with muscle, check for both 2 and 3 extract the best results
 
