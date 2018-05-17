@@ -1,6 +1,6 @@
 ## MITOBIM assembly for Micrelenchus huttonii
 
-###Summary
+### Summary
 
 
 ...
@@ -17,7 +17,7 @@ Spades is a local assembler. I tried with different subset of reads but it perfo
 ```
 
 
-###MITOBIM
+### MITOBIM
 
 I obtained a lot of contigs, I used them as. a reference for MITOBIM in an attempt to close the gaps.
 
@@ -61,3 +61,5 @@ mkdir -p Mhuttonii/3genesref015
 cd Mhuttonii/3genesref015
 MITObim.pl --denovo -end 100 --pair -sample Mhuttonii -ref refspades -readpool  ../2420-06-11-01_S6_L001_R2_001_TRIMMED_interleavedsub015.fastq --clean --quick ../../referencesformitobim/Microlenchus_huttonii_bait.fa
 ```
+
+much better, with 1  contig at 10270, one at

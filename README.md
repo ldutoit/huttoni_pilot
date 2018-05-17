@@ -1,5 +1,3 @@
-d# Micrelenchus
-
 ## Description
 
 ### Overview

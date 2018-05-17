@@ -1,6 +1,6 @@
 ## MITOBIM assembly for Micrelenchus tesselatus
 
-###Summary
+### Summary
 
 I tried a couple of approaches. One was to use MITOBIM that iteratively construct an assemblym and one was to use SPADES (an assembler). SPADES performed better by getting more large scaffolds but both left gaps,
 
