@@ -62,4 +62,7 @@ cd Mhuttonii/3genesref015
 MITObim.pl --denovo -end 100 --pair -sample Mhuttonii -ref refspades -readpool  ../2420-06-11-01_S6_L001_R2_001_TRIMMED_interleavedsub015.fastq --clean --quick ../../referencesformitobim/Microlenchus_huttonii_bait.fa
 ```
 
-much better, with 1  contig at 10270, one at
+much better, with 1  contig at 10270, one at weirdly 390.
+
+MITOS:
+![MITOS](figure_cache/Mhuttoniirefspadesc1.png)

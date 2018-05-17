@@ -13,4 +13,44 @@ Spades is a local assembler. I tried with different subset of reads but it perfo
 ```
 ./spades.py --pe1-1 ~/projects/Micrelenchus/trimmed_reads/2420-04-11-01_S4_L001_R1_001_TRIMMED.fastq.gz   --pe1-2 ~/projects/Micrelenchus/trimmed_reads/2420-04-11-01_S4_L001_R2_001_TRIMMED.fastq.gz   -o spadestestMtesselatus
 ```
+	### MITOBIM
 
+	I obtained a lot of contigs, I used them as. a reference for MITOBIM in an attempt to close the gaps.
+
+	I made a small with  12S, 16S and COI available on GENBANK in referencesformitobim/Microlenchus_tesselatus_bait.fa
+
+
+
+```
+mkdir -p Mtesselatus/3genesref015
+seqtk sample -s100 trimmed_reads/2420-04-11-01_S4_L001_R1_001_TRIMMED.fastq.gz  0.15 >  Mtesselatus/2420-04-11-01_S4_L001_R1_001_TRIMMED015.fastq 
+seqtk sample -s100 trimmed_reads/2420-04-11-01_S4_L001_R2_001_TRIMMED.fastq.gz  0.15 >  Mtesselatus/2420-04-11-01_S4_L001_R2_001_TRIMMED015.fastq
+~/repos/scripts/Micrelenchus/interleave-fasta.py  Mtesselatus/2420-04-11-01_S4_L001_R1_001_TRIMMED015.fastq  Mtesselatus/2420-04-11-01_S4_L001_R2_001_TRIMMED015.fastq   > Mtesselatus/2420-04-11-01_S4_L001_R2_001_TRIMMED_interleavedsub015.fastq
+
+```
+```
+mkdir -p Mtesselatus/3genesref015
+cd Mtesselatus/3genesref015
+MITObim.pl --denovo -end 100 --pair -sample Mtesselatus -ref refspades -readpool  ../2420-04-11-01_S4_L001_R2_001_TRIMMED_interleavedsub015.fastq --clean --quick ../../referencesformitobim/Microlenchus_tesselatus_bait.fa
+```	
+
+
+quite good results:
+
+```
+
+readpool contains 29580 reads
+assembly contains 9 contig(s)
+min contig length: 162 bp
+max contig length: 10275 bp
+avg contig length: 1701 bp
+find details on individual contigs in: /gpfs1m/projects/uoo00116/projects/Micrelenchus/Mtesselatus/3genesref015/iteration10/Mtesselatus-refspades_assembly/Mtesselatus-refspades_d_info/Mtesselatus-refspades_info_contigstats.txt
+```
+
+
+second scaffold is 3144.
+
+MITOS:
+
+![MITOS](Mtesselatusrefspadesc1.png)
+![MITOS](Mtesselatusrefspadesc2.png)
