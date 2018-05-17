@@ -41,6 +41,8 @@ The cleaning is done with *trimming_PE.sh* using the bbmap suite.
 
 ### 2. MITOBIM mitochondrial assembliesfor the four species from a COI
 
+
+
 We first identified bait sequences from NCBI to be able to run MITOBIM on it, a software creating an assembly by iterative mapping to a reference that updates itself. We were able to retrieve partial or complete sequences for COI, 12S rRNA and 16S rRNA for the four species ( see ref in listofseqforbaiting.md).
 
 Then we ran mitobim on each of them using similar but independent procedures, described in the files:
@@ -50,6 +52,28 @@ Micrelenchus_tenebrosus_mitobim.md
 Micrelenchus_huttonii_mitobim.md
 Roseaplagis_rufozona_mitobim.md
 
+We expected different results for different samples since they were sequenced with different number of primers:
+
+```
+the Micrelenchus samples were either amplified in 2 or 3 fragments as follows;
+Micrelenchus tesselatus (2420-04) 
+1. 16S.R2 - ND4.F 
+2. ND4.R - COI.F
+3.16S.F - COI.R
+ 
+Micrelenchus tenebrosus (2420-05)
+1. 16S.R2 - ND4.F 
+2. ND4.R - COI.F
+3.16S.F - COI.R
+ 
+Micrelenchus huttonii (2420-06)
+1. 16S.R2 - ND4.F 
+2. 16S.F - COI.R
+ 
+Roseaplagis rufozona (2420-07)
+1. 16S.R2 - ND4.F 
+2. 16S.F - COI.R
+```
 
 
 ### 3. remapping to the best of the MITOBIM results and checking coverage of mapping
