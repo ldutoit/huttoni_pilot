@@ -1,4 +1,4 @@
-	## Description
+## Description
 
 ### Overview
 
@@ -31,7 +31,8 @@ of  the Mitochondria done in another lab for Micrelencus tesselatus (=Cantharidu
   
 ### Output files
 
-We aligned our sequences using MAAFT v7 and created 3 output files:
+They are in this repository.
+
 ```
 Micrelenchusconsensus_long_4sp_MAAFT_extended.fa : Contains an alignment for the long fragment based on sequences that were manually extended for the 4 species
 Micrelenchusconsensus_long_4sp_MAAFT_NOTextended.fa: Contains an alignment for the long fragment based on sequences that were NOTmanually extended for the 4 species 
