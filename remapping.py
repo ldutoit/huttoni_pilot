@@ -1,4 +1,4 @@
-#remappingof every to their best mitobim assembly longest 1 or 2 fragments.
+#remappingof every to their best mitobim asssembly longest 1 or 2 fragments.
 
 
 #We want to remap some genomic samples
@@ -15,10 +15,10 @@ os.chdir("remapping")
 
 
 #sample [forwardreads, backwardreads, eference]
-sample_dict = { "Mtesselatus": ["../trimmed_reads/2420-04-11-01_S4_L001_R1_001_TRIMMED.fastq.gz", "../trimmed_reads/2420-04-11-01_S4_L001_R2_001_TRIMMED.fastq.gz","../Mtesselatus/3genesref015/iteration10/Mtesselatus_refspades-it10_noIUPAC.fasta"], 
-	 "Mtenebrosus": ["../trimmed_reads//2420-05-11-01_S5_L001_R1_001_TRIMMED.fastq.gz","../trimmed_reads//2420-05-11-01_S5_L001_R2_001_TRIMMED.fastq.gz", "../Mtenebrosus/3genesref015/iteration7/Mtenebrosus_refspades-it7_noIUPAC.fasta"],
-	 "Rrufozonai": ["../trimmed_reads//2420-07-11-01_S7_L001_R1_001_TRIMMED.fastq.gz","../trimmed_reads//2420-07-11-01_S7_L001_R2_001_TRIMMED.fastq.gz","../Rrufozonai/3genesref015/iteration40/Rrufozonai_refspades-it40_noIUPAC.fasta"],
-	 "Mhuttonnii": ["../trimmed_reads/2420-06-11-01_S6_L001_R1_001_TRIMMED.fastq.gz","../trimmed_reads/2420-06-11-01_S6_L001_R2_001_TRIMMED.fastq.gz","../Mhuttonii/3genesref015/iteration9/Mhuttonii_refspades-it9_noIUPAC.fasta"],
+sample_dict = { "Mtesselatus": ["../trimmed_reads/2420-04-11-01_S4_L001_R1_001_TRIMMED.fastq.gz", "../trimmed_reads/2420-04-11-01_S4_L001_R2_001_TRIMMED.fastq.gz","../outputbestmitobim/Mtesselatus-refspades_c1.fa"], 
+	 "Mtenebrosus": ["../trimmed_reads//2420-05-11-01_S5_L001_R1_001_TRIMMED.fastq.gz","../trimmed_reads//2420-05-11-01_S5_L001_R2_001_TRIMMED.fastq.gz", "../outputbestmitobim/Mtenebrosus-refspades_c1.fa"],
+	 "Rrufozonai": ["../trimmed_reads//2420-07-11-01_S7_L001_R1_001_TRIMMED.fastq.gz","../trimmed_reads//2420-07-11-01_S7_L001_R2_001_TRIMMED.fastq.gz","../outputbestmitobim/Rrufozonai-refspades_c1.fa"],
+	 "Mhuttonnii": ["../trimmed_reads/2420-06-11-01_S6_L001_R1_001_TRIMMED.fastq.gz","../trimmed_reads/2420-06-11-01_S6_L001_R2_001_TRIMMED.fastq.gz","../outputbestmitobim/Mhuttonii-refspades_c1.fa"],
 	 }
 
 
@@ -38,9 +38,8 @@ for sample in (sample_dict.keys()):
 	print command
 
 
-#EXAMPLE COMMAND
-#!/bin/sh
+#	#!/bin/sh
 #	module load BWA/0.7.10-goolf-1.5.14 SAMtools/0.1.19-foss-2015a
-#	bwa index -a is ../Rrufozonai/3genesref015/iteration40/Rrufozonai_refspades-it40_noIUPAC.fasta
-#	bwa mem  -T 40 ../Rrufozonai/3genesref015/iteration40/Rrufozonai_refspades-it40_noIUPAC.fasta ../trimmed_reads//2420-07-11-01_S7_L001_R1_001_TRIMMED.fastq.gz ../trimmed_reads//2420-07-11-01_S7_L001_R2_001_TRIMMED.fastq.gz > Rrufozonai.sam
+#	bwa index -a is ../outputbestmitobim/Rrufozonai-refspades_c1.fa
+#	bwa mem  -T 40 ../outputbestmitobim/Rrufozonai-refspades_c1.fa ../trimmed_reads//2420-07-11-01_S7_L001_R1_001_TRIMMED.fastq.gz ../trimmed_reads//2420-07-11-01_S7_L001_R2_001_TRIMMED.fastq.gz > Rrufozonai.sam
 #	samtools view -Sb Rrufozonai.sam > Rrufozonai.bam
