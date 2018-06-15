@@ -14,7 +14,7 @@
 
 ###Parameters
 adapterFile="/home/ludovic.dutoit/repos/softwares/bbmap/resources/adapters.fa" # can always be adapted from https://github.com/Transipedia/dekupl-annotation/blob/master/adapters.fa
-rawreadfolder=""
+rawreadfolder="/home/ludovic.dutoit/projects/DaniorerioRNA/source_files/rawreads/"
 output_folder_reads="/home/ludovic.dutoit/projects/DaniorerioRNA/trimmed_reads/"
 output_folder_fastqc="/home/ludovic.dutoit/projects/DaniorerioRNA/trimmed_reads/fastqc"
 
