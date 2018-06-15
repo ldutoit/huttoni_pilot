@@ -20,7 +20,7 @@ The data is Illumina from PCR amplified mitochondria for 4 species. I can try to
 
 For now google drive:
 
-https://drive.google.com/open?id=1lm0Reobp36_OcAq6geeWgNYy9rXo9BVA
+https://drive.google.com/open?id=1YhekLnfIlRYRKNGBRNPMb4kXNbEKoYUt
 
 
 ### Source files
