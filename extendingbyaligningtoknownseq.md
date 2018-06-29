@@ -31,8 +31,8 @@ Here again, although our own CO1  ( see sequence below) aligned towards the end 
 the four consensus files are:
 
 ```
-consensusMhuttonniiNOEDGESCOMBINED.fa
-consensusMtenebrosusNOEDGESCOMBINED.fa
-consensusMtesselatusNOEDGESCOMBINED.fa
-consensusRrufozonaiNOEDGESCOMBINED.fa
+output_files/consensusMhuttonniiNOEDGESCOMBINED.fa
+output_files/consensusMtenebrosusNOEDGESCOMBINED.fa
+output_files/consensusMtesselatusNOEDGESCOMBINED.fa
+output_files/consensusRrufozonaiNOEDGESCOMBINED.fa
 ```

@@ -44,10 +44,10 @@ Micrelenchusconsensus_short_2sp_MAAFT.fa: Contains an alignment for the short fr
 
 ### 1. cleaning
 
-The cleaning is done with *trimming_PE.sh* using the bbmap suite.
+The cleaning is done with *trimming_PE.sh* using Trimmomatic.
 
 
-### 2. MITOBIM mitochondrial assembliesfor the four species from a COI
+### 2. MITOBIM mitochondrial assemblies for the four species from a COI seed
 
 
 
@@ -89,9 +89,10 @@ Roseaplagis rufozona (2420-07)
 
 The annotation using MITOS corresponded well to a reference obtain by a collaborator group for M. tesselatus ( see below).
 
-The edges of fragments were sometimes a bit doubtful.
 
-![Schematic of mitbobim results](figure_cache/AfterMitobim.png)
+
+
+
 
 ### 3. remapping to the best of the MITOBIM results and checking coverage of mapping
 
@@ -107,6 +108,8 @@ After this consensus I aimed at improving the edge by adding known COI and 16S w
 
 The long contig ( contig 1) was extended in 2 cases. The short one never.
 
+!!!!!!! MAKE MITOBIM. from those guys, and plot with cgview_xmlwriter
+
 
 ### 5. alignment with MAAFT, check for both 2 and 3 extract the best results
 
@@ -116,6 +119,20 @@ Micrelenchusconsensus_long_4sp_MAAFT_extended.fa : Contains an alignment for the
 Micrelenchusconsensus_long_4sp_MAAFT_NOTextended.fa: Contains an alignment for the long fragment based on sequences that were NOTmanually extended for the 4 species 
 Micrelenchusconsensus_short_2sp_MAAFT.fa: Contains an alignment for the long fragment based on sequences that were NOTmanually extended for the 2 species with more sequence 
 ```
+
+
+### 6. Visualization
+
+Using Geneious, we were able to merge the two fragments of M tenebrosus as one long linear fragment of 13,278 bp, this was saved in the file [output_files/Mtenebrosus31278.fa](output_files/Mtenebrosus31278.fa)  and reannotated it using MITOS (output is [output_files/Mtenebrosus31278.gff](output_files/Mtenebrosus31278.gff). Notably, the small rRNA subunit was annotated to a region of only 89bp overlapping with tRNA and this has been edited out manually from the gff
+
+Using the Geneious software, we created one circular genome visualization:
+![figure_cache/CircularGenome.png](figure_cache/circularplot/CircularGenome.png) 
+
+It includes the 13278bp of tenebrosus. We  left an empty 3000bp bp at the end. This is the approximate length of the missing sequences suggested when aligned to the complete mitochondrion of the distant Gibbula umbilicalis (GENBANK: KX646541.1 ). All the files necessary are within the folder [(figure_cache/circularplot/]((figure_cache/circularplot/)
+
+
+
+
 
 ### References
 

@@ -1,0 +1,17 @@
+Micrelenchus_tesselatus_c1	mitfi	tRNA	323	390	2.89999996239e-10	+	.	Name=trnL1(tag)	
+Micrelenchus_tesselatus_c1	mitfi	tRNA	409	476	3.79999986555e-13	+	.	Name=trnL2(taa)	
+Micrelenchus_tesselatus_c1	mitos	gene	478	1422	286563329.0	+	.	Name=nad1
+Micrelenchus_tesselatus_c1	mitfi	tRNA	1463	1529	1.70000000188e-10	+	.	Name=trnP(tgg)	
+Micrelenchus_tesselatus_c1	mitos	gene	1533	2039	3215432.8	+	.	Name=nad6
+Micrelenchus_tesselatus_c1	mitos	gene	2077	3216	660085769.2	+	.	Name=cob
+Micrelenchus_tesselatus_c1	mitfi	tRNA	3243	3309	7.00000013509e-09	+	.	Name=trnS2(tga)	
+Micrelenchus_tesselatus_c1	mitfi	tRNA	3340	3410	1.29999999654e-09	+	.	Name=trnT(tgt)	
+Micrelenchus_tesselatus_c1	mitos	gene	3446	3745	7329103.1	+	.	Name=nad4l
+Micrelenchus_tesselatus_c1	mitos	gene	3796	5127	360883097.1	+	.	Name=nad4
+Micrelenchus_tesselatus_c1	mitfi	tRNA	5170	5236	3.2000000374e-06	+	.	Name=trnH(gtg)	
+Micrelenchus_tesselatus_c1	mitos	gene	5279	6973	513324511.7	+	.	Name=nad5
+Micrelenchus_tesselatus_c1	mitfi	tRNA	7027	7092	9.20000013671e-12	+	.	Name=trnF(gaa)	
+Micrelenchus_tesselatus_c1	mitos	gene	7133	7828	54892924.3	-	.	Name=atp6
+Micrelenchus_tesselatus_c1	mitos	gene	7883	8047	67914.4	-	.	Name=atp8
+Micrelenchus_tesselatus_c1	mitfi	tRNA	8049	8114	3.00000002618e-09	-	.	Name=trnD(gtc)	
+Micrelenchus_tesselatus_c1	mitos	gene	8144	8836	223929261.4	-	.	Name=cox2
