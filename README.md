@@ -108,7 +108,6 @@ After this consensus I aimed at improving the edge by adding known COI and 16S w
 
 The long contig ( contig 1) was extended in 2 cases. The short one never.
 
-!!!!!!! MAKE MITOBIM. from those guys, and plot with cgview_xmlwriter
 
 
 ### 5. alignment with MAAFT, check for both 2 and 3 extract the best results
@@ -128,7 +127,7 @@ Using Geneious, we were able to merge the two fragments of M tenebrosus as one l
 Using the Geneious software, we created one circular genome visualization:
 ![figure_cache/CircularGenome.png](figure_cache/circularplot/CircularGenome.png) 
 
-It includes the 13278bp of tenebrosus. We  left an empty 3000bp bp at the end. This is the approximate length of the missing sequences suggested when aligned to the complete mitochondrion of the distant Gibbula umbilicalis (GENBANK: KX646541.1 ). All the files necessary are within the folder [(figure_cache/circularplot/]((figure_cache/circularplot/)
+It includes the 13278bp of tenebrosus. A higher resolution figure is available in pdf. We  left an empty 3000bp bp at the end. This is the approximate length of the missing sequences suggested when aligned to the complete mitochondrion of the distant Gibbula umbilicalis (GENBANK: KX646541.1 ). All the files necessary are within the folder [(figure_cache/circularplot/]((figure_cache/circularplot/)
 
 
 
