@@ -18,10 +18,10 @@ The data is Illumina from PCR amplified mitochondria for 4 species. I can try to
  
 ### Physical location of the data
 
-For now google drive:
 
-https://drive.google.com/open?id=1YhekLnfIlRYRKNGBRNPMb4kXNbEKoYUt
+Source files archived on hcs:
 
+storage.hcs-p01.otago.ac.nz/sci-bioinformatics-project-archive
 
 ### Source files
 There is an excel sheet:*NGS project explanation for Ludo.xls* saying which species is which sample. Careful, some samples in the source data are for other projects.

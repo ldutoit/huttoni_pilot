@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ##########This script aims at cleaning reads. It will create NeSi jobs for cleaning reads using
-#bbmap
+#trimmomatic
 
 #It will create small command files ( 1 per sample) that can be run individually or launch as jobs
 #see : https://github.com/ldutoit/DaniorerioRNA/wiki/1.-Cleaning/_edit
