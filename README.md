@@ -2,7 +2,7 @@
 
 ### Overview
 
-Micrelenchus is a genus of molluscs with lately unexpected phylogenetics relationships (Donald et al. 206, MPE). We have data for 4 species including outgroup).
+Micrelenchus huttoni mitogenomics. We have one species 2x150bp. This is a modified version of https://github.com/ldutoit/Micrelenchus applied to Micrelenchus huttoni alone.
 
 
 ### Key Players
@@ -12,7 +12,7 @@ Hamish Spencer
 
 ### What are my objectives ?
 
-My objectives are to assemble and align mitochondria from 4 species so that Kirsten can do phylogenetics trees from them. 
+My objectives are to assemble mitochondria from 1 species. If needed I'll pull extra data from past species. After that, I will estimate how much data is needed for reliable SNP calling.
 
 The data is Illumina from PCR amplified mitochondria for 4 species. I can try to assemble them on their own. There is also one extra reference assembly from a collaborator for Micrelencus tesselatus (=Cantharidus.tesselatus.fasta).
  
@@ -24,20 +24,11 @@ Source files archived on hcs:
 storage.hcs-p01.otago.ac.nz/sci-bioinformatics-project-archive
 
 ### Source files
-There is an excel sheet:*NGS project explanation for Ludo.xls* saying which species is which sample. Careful, some samples in the source data are for other projects.
-  
-The data  includes assembly done upstream with *Edena* as well as the raw reads in *NZGL02420P2* and a reference assembly 
-of  the Mitochondria done in another lab for Micrelencus tesselatus (=Cantharidus.tesselatus.fasta).
+
   
 ### Output files
 
-They are in this repository.
 
-```
-Micrelenchusconsensus_long_4sp_MAAFT_extended.fa : Contains an alignment for the long fragment based on sequences that were manually extended for the 4 species
-Micrelenchusconsensus_long_4sp_MAAFT_NOTextended.fa: Contains an alignment for the long fragment based on sequences that were NOTmanually extended for the 4 species 
-Micrelenchusconsensus_short_2sp_MAAFT.fa: Contains an alignment for the short fragment based on sequences that were NOTmanually extended for the 2 species with more sequence 
-```
 
 
 ## Analyses Description
@@ -53,34 +44,20 @@ The cleaning is done with *trimming_PE.sh* using Trimmomatic.
 
 We first identified bait sequences from NCBI to be able to run MITOBIM on it, a software creating an assembly by iterative mapping to a reference that updates itself. We were able to retrieve partial or complete sequences for COI, 12S rRNA and 16S rRNA for the four species ( see ref in listofseqforbaiting.md).
 
-Then we ran mitobim on each of them using similar but independent procedures, described in the files:
 
-Micrelenchus_tesselatus_mitobim.md
-Micrelenchus_tenebrosus_mitobim.md
+
 Micrelenchus_huttonii_mitobim.md
-Roseaplagis_rufozona_mitobim.md
 
 We expected different results for different samples since they were sequenced with different number of primers:
 
 ```
 the Micrelenchus samples were either amplified in 2 or 3 fragments as follows;
-Micrelenchus tesselatus (2420-04) 
-1. 16S.R2 - ND4.F 
-2. ND4.R - COI.F
-3.16S.F - COI.R
- 
-Micrelenchus tenebrosus (2420-05)
-1. 16S.R2 - ND4.F 
-2. ND4.R - COI.F
-3.16S.F - COI.R
- 
+
 Micrelenchus huttonii (2420-06)
 1. 16S.R2 - ND4.F 
 2. 16S.F - COI.R
  
-Roseaplagis rufozona (2420-07)
-1. 16S.R2 - ND4.F 
-2. 16S.F - COI.R
+
 ```
 
 **We obtained things in 2 fragments for M. tesselatus and M. tenebrosus and 1 fragment for M. huttonii and the outgroup.**
@@ -88,8 +65,6 @@ Roseaplagis rufozona (2420-07)
  I extracted all of that and put it into a folder "outputbestmitobim"
 
 The annotation using MITOS corresponded well to a reference obtain by a collaborator group for M. tesselatus ( see below).
-
-
 
 
 
