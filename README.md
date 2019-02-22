@@ -42,21 +42,8 @@ The cleaning is done with *trimming_PE.sh* using Trimmomatic.
 
 
 
-We first identified bait sequences from NCBI to be able to run MITOBIM on it, a software creating an assembly by iterative mapping to a reference that updates itself. We were able to retrieve partial or complete sequences for COI, 12S rRNA and 16S rRNA for the four species ( see ref in listofseqforbaiting.md).
+We started by using an old long 10kb fragment of mhuttoni obtained in the original micrelenchus and we tried to extend it using [Micrelenchus_huttonii_mitobim.md](Micrelenchus_huttonii_mitobim.md)
 
-
-
-Micrelenchus_huttonii_mitobim.md
-
-We expected different results for different samples since they were sequenced with different number of primers:
-
-```
-the Micrelenchus samples were either amplified in 2 or 3 fragments as follows;
-
-Micrelenchus huttonii (2420-06)
-1. 16S.R2 - ND4.F 
-2. 16S.F - COI.R
- 
 
 ```
 
