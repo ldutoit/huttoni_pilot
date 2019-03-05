@@ -33,7 +33,7 @@ The reference *M.tesselatus* [output_files/consensusMtesselatusNOEDGESCOMBINED.f
 
 ### 1. cleaning
 
-The cleaning is done with *trimming_PE.sh* using Trimmomatic.
+The cleaning is done with [trimming_PE.sh](trimming_PE.sh) using Trimmomatic.
 
 
 ### 2. Mapping to M tesselatus.
